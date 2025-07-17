@@ -1,0 +1,8 @@
+const path = require('path');
+
+module.exports = {
+  'config': path.resolve('src', 'libs', 'posgreSqlDb', 'config', 'config.js'),
+  'models-path': path.resolve('src', 'libs', 'posgreSqlDb', 'models'),
+  'migrations-path': path.resolve('src', 'libs', 'posgreSqlDb', 'migrations'),
+  'seeders-path': path.resolve('src', 'libs', 'posgreSqlDb', 'seeders'),
+};
