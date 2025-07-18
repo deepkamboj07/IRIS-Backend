@@ -4,6 +4,7 @@ import { sequelize } from './libs/posgreSqlDb/config/database';
 import uploadRoutes from './routes/upload.routes';
 import loginRoute from './routes/auth.routes';
 import meRouter from './routes/me.routes';
+import projectRouter from './routes/project.routes';
 import postRouter from './routes/posts.routes';
 import cors from 'cors';
 import authentication from './middleware/authentication';
@@ -32,6 +33,7 @@ app.use(authentication);
 app.use('/api/v1/me', meRouter);
 app.use('/api/v1/upload', uploadRoutes);
 app.use('/api/v1/posts', postRouter);
+app.use('/api/v1/projects', projectRouter);
 
 
 
